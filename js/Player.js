@@ -8,7 +8,7 @@ class Player {
 
   pegarNumeroJogadores()
   {
-    var numeroJogadoresRef = bancoDeDados.ref("numeroJogadores");
+    var numeroJogadoresRef = bancoDeDados.ref("numeroDeJogadores");
     numeroJogadoresRef.on("value", dados => {
       numeroJogadores = dados.val();
     });
@@ -17,7 +17,7 @@ class Player {
   atualizarNumeroJogadores(contador)
   {
     bancoDeDados.ref("/").update({
-      numeroJogadores: contador
+      numeroDeJogadores: contador
     });
   }
 
