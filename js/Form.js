@@ -41,14 +41,14 @@ class Form {
       this.nome.hide(); // hide = esconder
       this.botaoJogar.hide(); // hide = esconder
       
+      var mensagem = `Olah, ${this.nome.value()} </br>espere o outro jogador entrar...`;
+      this.mensagem.html(mensagem);
+
       contadorJogadores = contadorJogadores + 1;
       jogador.nome = this.nome.value();
       jogador.indice = contadorJogadores;
       jogador.addJogador();
       jogador.atualizarNumeroJogadores(contadorJogadores);
-      
-      var mensagem = `Olah, ${this.nome.value()} </br>espere o outro jogador entrar...`;
-      this.mensagem.html(mensagem);
     });
   }
 

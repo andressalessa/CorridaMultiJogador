@@ -1,5 +1,5 @@
 // variaveis
-var bancoDeDados, jogo, estadoDoJogo, numeroJogadores, contadorJogadores = 0;
+var bancoDeDados, jogo, estadoDoJogo, numeroJogadores = 0, contadorJogadores = 0;
 var jogador;
 var backgroundImg,carro1,carro2,pista,carro1img,carro2img;
 var carros,jogadores;
@@ -25,10 +25,11 @@ function setup() {
 function draw() {
     // desenhar na tela
     background(backgroundImg);
-    if (numeroJogadores===2) {
+
+    if (numeroJogadores === 2) {
         jogo.atualizarEstadoDoJogo(1)
     }
-    if (estadoDoJogo===1) {
+    if (estadoDoJogo === 1) {
         jogo.jogar()
     }
 }
