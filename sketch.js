@@ -19,6 +19,7 @@ function setup() {
     // iniciar o banco de dados
     bancoDeDados = firebase.database();
     jogo = new Game();
+    jogo.pegarEstadoDoJogo();
     jogo.comecar();
 }
 
