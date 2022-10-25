@@ -8,9 +8,9 @@ class Form {
 
   esconder() 
   {
-    this.mensagem.esconder();
-    this.botaoJogar.esconder();
-    this.nome.esconder();
+    this.mensagem.hide();
+    this.botaoJogar.hide();
+    this.nome.hide();
   }
 
   mostrar()

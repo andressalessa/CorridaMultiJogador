@@ -5,7 +5,7 @@ class Game {
     jogador = new Player(); // novo jogador
     numeroJogadores = jogador.pegarNumeroJogadores();
 
-    var formulario = new Form();
+    formulario = new Form();
     formulario.mostrar()
     
     carro1 =createSprite(width/2-50,height-100);
